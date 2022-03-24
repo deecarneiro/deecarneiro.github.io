@@ -24,6 +24,10 @@ function SectionHome(props) {
             }}
           />
           <h1 title="FRONTEND" className="_404">FRONTEND DEVELOPER</h1>
+          <div className="button-container">
+          <button>CONTACT ME</button>
+
+          </div>
         </div>
       </div>
     </Section>
