@@ -23,7 +23,7 @@ function SectionHome(props) {
               loop: true,
             }}
           />
-          <h1 title="FRONTEND" className="_404">FRONTEND DEVELOPER</h1>
+          <h1 title="FRONTEND DEVELOPER" className="_404">FRONTEND DEVELOPER</h1>
           <div className="button-container">
           <button>CONTACT ME</button>
 
