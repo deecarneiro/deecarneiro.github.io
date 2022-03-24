@@ -18,10 +18,7 @@ function ScrollSnapPage() {
     return (
         <Container>
             <Content>
-                <SectionHome>
-                    <p>Dee Carneiro</p> 
-                    <h1>FRONTEND <br /> <center>      DEVELOPER</center></h1> 
-                </SectionHome>
+                <SectionHome/>
                 <SectionAbout> <h1> About </h1></SectionAbout>
                 <SectionServices> <h1> Services </h1></SectionServices>
                 <SectionProjects> <h1> Projects </h1></SectionProjects>

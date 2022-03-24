@@ -1,6 +1,8 @@
 import '../Section.css';
 import Section from '..';
-import Video from '../../../assets/videos/video_3.mp4'
+import Video from '../../../assets/videos/video_1.mp4'
+import Typewriter from 'typewriter-effect';
+
 
 function SectionHome(props) {
   return (
@@ -14,7 +16,14 @@ function SectionHome(props) {
             type="video/mp4" src={Video} />
           <div className="home-content">
           </div>
-          <h1>{props.children}</h1>
+          <Typewriter
+            options={{
+              strings: ['$ deecarneiro\'s portfolio'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+          <h1 title="FRONTEND" className="_404">FRONTEND DEVELOPER</h1>
         </div>
       </div>
     </Section>
