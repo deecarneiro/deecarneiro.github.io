@@ -1,12 +1,13 @@
+import Section from '..';
 import '../Section.css';
 
 function SectionAbout(props) {
 
 
   return (
-    <div>
+    <Section>
       {props.children}
-    </div>
+    </Section>
   );
 }
 

@@ -1,12 +1,13 @@
 import '../Section.css';
+import Section from '..';
 
 function SectionContact(props) {
 
 
   return (
-    <div>
+    <Section>
       {props.children}
-    </div>
+    </Section>
   );
 }
 
