@@ -11,7 +11,6 @@
 
 section:not(:first-child) {
     background-color: #161339;
-
 }
 
 .section-home .bg {
@@ -33,7 +32,7 @@ section:not(:first-child) {
 
 .section-home .home-content {
     position: absolute;
-    z-index: 99;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;

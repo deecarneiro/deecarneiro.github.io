@@ -4,3 +4,16 @@ body, html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    height: 5000px;
+  }
+  
+  .fixed-center {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+  }
+  

@@ -6,7 +6,9 @@ function SectionContact(props) {
 
   return (
     <Section>
-      {props.children}
+      <div id="contact">
+        {props.children}
+      </div>
     </Section>
   );
 }

@@ -6,7 +6,9 @@ function SectionProjects(props) {
 
   return (
     <Section>
-      {props.children}
+      <div id="projects">
+        {props.children}
+      </div>
     </Section>
   );
 }

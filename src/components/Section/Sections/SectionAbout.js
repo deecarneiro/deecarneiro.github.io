@@ -6,7 +6,9 @@ function SectionAbout(props) {
 
   return (
     <Section>
+      <div id="about">
       {props.children}
+      </div>
     </Section>
   );
 }

@@ -6,7 +6,9 @@ function SectionServices(props) {
 
   return (
     <Section>
-      {props.children}
+      <div id="services">
+        {props.children}
+      </div>
     </Section>
   );
 }

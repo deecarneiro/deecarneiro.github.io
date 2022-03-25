@@ -6,7 +6,9 @@ function SectionExperience(props) {
 
   return (
     <Section>
-      {props.children}
+      <div id="experience">
+        {props.children}
+      </div>
     </Section>
   );
 }
