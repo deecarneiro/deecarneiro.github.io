@@ -1,8 +1,7 @@
 import './SectionHome.css';
-import Section from '..';
-import Video from '../../../assets/videos/video_1.mp4'
+import Section  from '../..';
+import Video from '../../../../assets/videos/video_1.mp4'
 import Typewriter from 'typewriter-effect';
-import IsVisible from 'react-is-visible'
 
 
 function SectionHome(props) {

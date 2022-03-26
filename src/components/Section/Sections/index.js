@@ -1,16 +1,9 @@
-import Section from '..';
-import '../Section.css';
+import SectionAbout from './SectionAbout';
+import SectionContact from './SectionContact';
+import SectionExperience from './SectionExperience';
+import SectionHome from './SectionHome';
+import SectionProjects from './SectionProjects';
+import SectionServices from './SectionServices';
 
 
-function SectionServices(props) {
-
-  return (
-    <Section>
-      <div id="services">
-        {props.children}
-      </div>
-    </Section>
-  );
-}
-
-export default SectionServices;
+export {SectionAbout, SectionContact, SectionExperience, SectionHome, SectionProjects, SectionServices};

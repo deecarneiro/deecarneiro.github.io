@@ -1,5 +1,5 @@
-import Section from '..';
-import '../Section.css';
+import Section  from '../..';
+import './SectionProjects.css';
 
 function SectionProjects(props) {
 
