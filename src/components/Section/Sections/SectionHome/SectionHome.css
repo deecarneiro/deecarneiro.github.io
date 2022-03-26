@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+.section-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section-home .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-home .bg .videoBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: black;
+    z-index: -1;
+
+}
+
+.section-home .home-content {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Anton', sans-serif;
+}
+
+.home-content h1 {
+    vertical-align: top;
+    font-size: 8vw;
+    line-height: 8vh;
+    font-weight: bolder;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: lightcyan;
+    letter-spacing: -1vw;
+}
+
+.Typewriter {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 2vw;
+    line-height: 0;
+    margin-top: 2.5em;
+    margin-left: 4vw;
+    margin-bottom: 1px;
+    font-family: 'Fira Mono', monospace;
+    color: lightcyan;
+}
+
+
+._404 {
+    animation: glitch 3s linear infinite;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    vertical-align: top;
+    font-size: 18vw;
+    line-height: 18vw;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Fira Mono', monospace;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+
+._404:before {
+    content: attr(title);
+    position: absolute;
+}
+
+._404:before {
+    animation: glitchTop 3s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+    2%, 64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+._404:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+    2%, 64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+.button-home-container{
+     display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.section-home button {
+    width: 80vw;
+    height: 10vh;
+    font-size: 6vw;
+    background-color: #161339;
+    color: lightcyan;
+    font-family: 'Fira Mono', monospace;
+    font-weight: lighter;
+    letter-spacing: -2px;
+    outline: 2px solid lightcyan;
+    outline-offset: 2vw;
+}
+
+@media (max-width: 1150px) {
+
+    .Typewriter {
+        font-size: 5vw;
+        line-height: 5vh;
+        margin-left: 2vw;
+    }
+
+    .button-container {
+        display: flex;
+    }
+}
+
+@media (min-device-width: 1151px) and (max-device-width: 1200px) {
+
+    .Typewriter  {
+        font-size: 5vw;
+        line-height: 5vw;
+        margin-top: 20vh;
+    }
+}
