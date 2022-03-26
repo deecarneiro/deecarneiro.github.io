@@ -1,4 +1,4 @@
-import '../Section.css';
+import './SectionHome.css';
 import Section from '..';
 import Video from '../../../assets/videos/video_1.mp4'
 import Typewriter from 'typewriter-effect';

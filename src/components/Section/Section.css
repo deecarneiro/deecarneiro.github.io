@@ -13,6 +13,12 @@ section:not(:first-child) {
     background-color: #161339;
 }
 
+section:last-child {
+    background-color: black;
+}
+
+section
+
 .section-home .bg {
     position: relative;
     width: 100%;
