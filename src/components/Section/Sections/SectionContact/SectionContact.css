@@ -78,3 +78,7 @@
     font-family: 'Fira Mono', monospace;
     color: white;
 }
+
+.identifiers.email.error, .identifiers.message.error, .identifiers.error{
+    box-shadow: 8px 8px 0 red;
+}
