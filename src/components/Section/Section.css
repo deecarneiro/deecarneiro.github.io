@@ -1,7 +1,11 @@
-section:not(:first-child) {
+section:first-child {
+    background-color: transparent !important;
+}
+
+section:nth-of-type(odd) {
     background-color: #161339;
 }
 
-section:last-child {
-    background-color: black;
+section:nth-of-type(even) {
+    background: black;
 }

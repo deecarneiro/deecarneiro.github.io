@@ -16,13 +16,13 @@ function SectionHome() {
             type="video/mp4" src={Video} />
           <div className="home-content">
           </div>
-          <Typewriter
+          {/* <Typewriter
             options={{
               strings: ['deecarneiro\'s portfolio'],
               autoStart: true,
               loop: true,
             }}
-          />
+          /> */}
           <h1 title="FRONTEND DEVELOPER" className="_404">FRONTEND DEVELOPER</h1>
           <div className="button-home-container">
           <button className="button-home">CONTACT ME</button>

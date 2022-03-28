@@ -1,0 +1,20 @@
+.section-services{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: center;
+    flex-direction: row;
+}
+
+.services-row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+#services .Typewriter{
+    margin: -5vw 0 3vw 0;
+}
