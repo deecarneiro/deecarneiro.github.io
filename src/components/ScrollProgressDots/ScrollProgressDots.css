@@ -27,18 +27,7 @@
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
     .indicators {
-        right: 32%;
-        flex-direction: row;
-        top: -25vh;
-    }
-    
-    .indicator{
-        padding: 1.5vw;
-        margin-left: 5vw;
-    }
-    .active {
-        background-color: lightcyan;
-        transform: rotate(45deg);;
+       display: none;
     }
     
 }
