@@ -134,10 +134,14 @@
 }
 
 .button-home-container{
-     display: none;
+    position: absolute;
+    display: none;
+    flex: 1;
+    margin-left: 10vw;
     align-items: center;
     align-content: center;
     justify-content: center;
+    z-index: 104;
 }
 
 .section-home button {
@@ -153,24 +157,22 @@
     outline-offset: 2vw;
 }
 
-@media (max-width: 1150px) {
-
-    .Typewriter {
-        font-size: 5vw;
-        line-height: 5vh;
-        margin-left: 2vw;
-    }
-
-    .button-container {
-        display: flex;
-    }
-}
-
 @media (min-device-width: 1151px) and (max-device-width: 1200px) {
 
     .Typewriter  {
         font-size: 5vw;
         line-height: 5vw;
         margin-top: 20vh;
+    }
+}
+
+@media (min-device-width: 350px) and (max-device-width: 850px) {
+   
+    ._404{
+        margin-top: 20vh;
+    }
+
+    .button-home-container {
+        display: flex;
     }
 }

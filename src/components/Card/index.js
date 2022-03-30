@@ -1,4 +1,5 @@
 import './Card.css';
+// import  Mobile  from '../../assets/images/Mobile.jsx';
 
 function Card(props) {
 
@@ -6,7 +7,7 @@ function Card(props) {
     return (
         <span className="card">
             <h1>{title}</h1>
-            <img src={imgSrc} alt={title} />
+            {props.children}
             <p>{description}</p>
             <button onClick={onclick}>{buttonValue}</button>
         </span>

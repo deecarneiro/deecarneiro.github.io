@@ -2,10 +2,10 @@ section:first-child {
     background-color: transparent !important;
 }
 
-section:nth-of-type(odd) {
+section:nth-of-type(2) {
     background-color: #161339;
 }
 
-section:nth-of-type(even) {
+section:nth-of-type(3) {
     background: black;
 }

@@ -5,6 +5,10 @@ import Typewriter from 'typewriter-effect';
 
 
 function SectionHome() {
+
+  const goTo = () => {
+   return document.location='#contact'
+  }
   return (
     <Section>
       <div  id="home" className="section-home">
@@ -25,7 +29,7 @@ function SectionHome() {
           /> */}
           <h1 title="FRONTEND DEVELOPER" className="_404">FRONTEND DEVELOPER</h1>
           <div className="button-home-container">
-          <button className="button-home">CONTACT ME</button>
+          <button className="button-home" onClick={() =>goTo()} >CONTACT ME</button>
           </div>
         </div>
       </div>

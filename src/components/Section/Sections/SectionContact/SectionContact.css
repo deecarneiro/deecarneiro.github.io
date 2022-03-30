@@ -82,3 +82,29 @@
 .identifiers.email.error, .identifiers.message.error, .identifiers.error{
     box-shadow: 8px 8px 0 red;
 }
+
+@media (min-device-width: 350px) and (max-device-width: 850px) {
+
+  .contact-box>.Typewriter{
+      font-size: 15px;
+  }
+
+  .contact-box{
+      height: 60vh;
+      width: 80vw;
+  }
+
+.identifiers.message {
+    width: 90%;
+    height: 30vh;
+}
+
+.identifiers {
+    width: 90%;
+    margin-top: 2%;
+}
+
+.identifiers.email {
+    width: 90%;
+}
+}
