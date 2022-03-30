@@ -10,7 +10,7 @@ import REST from '../src/assets/images/REST';
 function App() {
 
   return (
-    <Router>      
+<Router basename={process.env.PUBLIC_URL}>
       <ScrollSnapPage className="App"/>
     </Router>
   );
