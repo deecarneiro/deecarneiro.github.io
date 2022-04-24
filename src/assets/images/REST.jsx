@@ -3,7 +3,7 @@ import React from "react";
 function REST() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2fff/svg"
       width="500mm"
       height="500mm"
       version="1.1"
@@ -12,7 +12,7 @@ function REST() {
       <g>
         <path
           fill="none"
-          stroke="#000"
+          stroke="#fff"
           strokeDasharray="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -23,7 +23,7 @@ function REST() {
         ></path>
         <path
           fill="none"
-          stroke="#000"
+          stroke="#fff"
           strokeDasharray="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -34,7 +34,7 @@ function REST() {
         ></path>
         <path
           fill="none"
-          stroke="#000"
+          stroke="#fff"
           strokeDasharray="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -45,7 +45,7 @@ function REST() {
         ></path>
         <path
           fill="none"
-          stroke="#000"
+          stroke="#fff"
           strokeDasharray="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -59,7 +59,7 @@ function REST() {
           style={{ lineHeight: "1.25" }}
           x="134.111"
           y="297.672"
-          fill="#000"
+          fill="#fff"
           fillOpacity="1"
           stroke="none"
           strokeWidth="0.265"

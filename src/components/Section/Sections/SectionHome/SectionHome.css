@@ -53,7 +53,7 @@
     line-height: 100%;
     position: absolute;
     color: green;
-    top: -8.5vh;
+    top: -4.8vw;
     z-index: -1;
 }
 
@@ -63,7 +63,7 @@
     line-height: 100%;
     color: purple;
     left: 0;
-    top: -8.5vh;
+    top: -4.8vw;
     z-index: -1;
 }
 
@@ -121,21 +121,24 @@
     color: white;
 }
 
-@media (min-device-width: 1151px) and (max-device-width: 1200px) {
-    .Typewriter {
-        font-size: 5vw;
-        line-height: 5vw;
-        margin-top: 20vh;
-    }
-}
 
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
-    ._404 {
-        margin-top: 20vh;
+    .section-home .home-content {
+        flex-direction: column !important;
     }
 
-    .button-home-container {
-        display: flex;
+    .box.right {
+        margin-top: 2vh;
+        text-align: center;
     }
+
+    ._404.first {
+        margin-top: 12vh;
+    }
+    
+    ._404 {
+       font-size: 12vh;
+    }
+
 }

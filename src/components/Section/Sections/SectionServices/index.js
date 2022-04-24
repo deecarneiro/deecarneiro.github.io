@@ -2,94 +2,80 @@ import Section from '../..';
 import './SectionServices.css';
 import Typewriter from 'typewriter-effect';
 import Card from '../../../Card';
-import  Mobile  from '../../../../assets/images/Mobile.jsx';
+import Mobile from '../../../../assets/images/Mobile.jsx';
 import Web from '../../../../assets/images/Web.jsx';
 import REST from '../../../../assets/images/REST.jsx';
 import ReactCardCarousel from "react-card-carousel";
 import VisibilitySensor from 'react-visibility-sensor';
-import {useState} from 'react';
-import {BrowserView, MobileView} from 'react-device-detect';
+import { useState } from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
+import Games from '../../../../assets/images/Games';
 
 function SectionServices() {
 
   const [visible, setVisible] = useState(false);
+  const [isTyping, setIsTyping] = useState(true);
+
+  const goTo = () => {
+    return document.location = '#contact'
+  }
 
   return (
     <Section>
-     <Typewriter
-          options={{
-            strings: ['cd Work/Services', 'ls'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-            <VisibilitySensor onChange={(isVisible) => { setVisible(isVisible) }}>
       <div id="services">
-       <Typewriter
-          options={{
-            strings: ['cd Work/Services', 'ls'],
-            autoStart: true,
-            loop: true,
+        {isTyping ?
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter.typeString('cd /Work/Services')
+              .callFunction(() => {
+                console.log('cd /Work/Services');
+              })
+              .pauseFor(1000)
+              .deleteAll()
+              .start()
+            typewriter.typeString('ls')
+              .callFunction(() => {
+                setVisible(true)
+                setIsTyping(false)
+              })
+              .pauseFor(2500)
+              .deleteAll()
+              .callFunction(() => {
+                console.log('All strings were deleted');
+              })
+              .start()
           }}
-        />
-        <MobileView>
-                {visible ?
-               <ReactCardCarousel disable_box_shadow={true}>
-          <Card
-            title="Mobile"
-            description="Frontend mobile with React Native, Flutter, Ionic Framework..."
-            buttonValue="See more"
-          >
-            <Mobile/>
-          </Card>
-          <Card
-            title="Frontend Web"
-            description="Frontend development with React.js, Bootstrap, Angular.js and Angular"
-            buttonValue="See more"
-          >
-          <Web/>
-          </Card>
-          <Card
-            title="REST APIs"
-            description="REST API development with Spring Boot, Node.js and JPA"
-            buttonValue="See more"
-          >
-            <REST/>
-          </Card>
-        
-        </ReactCardCarousel>
-        : <div></div>
-        }
-       </MobileView>
-        <BrowserView>
-        <div className="section-services">
-              <Card
-            title="Mobile"
-            description="Frontend mobile with React Native, Flutter, Ionic Framework..."
-            buttonValue="See more"
-          >
-            <Mobile/>
-          </Card>
-          <Card
-            title="Frontend Web"
-            description="Frontend development with React.js, Bootstrap, Angular.js and Angular"
-            buttonValue="See more"
-          >
-          <Web/>
-          </Card>
-          <Card
-            title="REST APIs"
-            description="REST API development with Spring Boot, Node.js and JPA"
-            buttonValue="See more"
-          >
-            <REST/>
-          </Card></div>
-   
-          </BrowserView>
-        </div>
-                </VisibilitySensor>
+        /> : ''}
+        {visible &&
+          <div className="section-services">
+            <Card
+              title="Mobile"
+              description="Frontend mobile with React Native, Flutter, Ionic Framework..."
+              buttonValue="See more"
+              onclick={() => goTo()}
+            >
+              <Mobile />
+            </Card>
+            <Card
+              title="Web"
+              description="Frontend and Backend development"
+              buttonValue="See more"
+              onclick={() => goTo()}
+            >
+              <Web />
+            </Card>
+            <Card
+              title="Games"
+              description="REST API development with Spring Boot, Node.js and JPA"
+              buttonValue="See more"
+              onclick={() => goTo()}
+            >
+              <Games />
+            </Card>
+          </div>}
+      </div>
 
-        </Section>
+    </Section>
   );
 }
 

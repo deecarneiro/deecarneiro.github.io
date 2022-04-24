@@ -11,7 +11,7 @@ function Web() {
     >
       <g
         fill="none"
-        stroke="#000"
+        stroke="#fff"
         strokeDasharray="none"
         strokeLinecap="round"
         strokeMiterlimit="4"

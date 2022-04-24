@@ -4,13 +4,13 @@
     align-items: center;
     flex-direction: column !important;
     height: 60vh;
-    width: 25vw;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: 8px 8px 0  black;
+    width: 26vw;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 8px 8px 0  white;
     margin-right: 5vw;
     border-radius: 2px;
-    color: black;
+    color: white;
 }
 
 .card button{
@@ -18,10 +18,10 @@
     padding: 1vw 3vw;
     font-size: large;
     font-family: 'Fira Mono', monospace;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0  black;
-    background-color: white;
-    color: black;
+    border: 2px solid white;
+    box-shadow: 5px 5px 0  white;
+    background-color: black;
+    color: white;
 }
 
 .card button:hover{
@@ -38,21 +38,8 @@
 .card svg{
     width: 12vw;
     height: 25vh;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0  black;
     object-fit:cover;
     object-position:50% 50%; 
-}
-
-.card svg:hover{
-    box-shadow: 
-    2px 2px 0  violet,
-    4px 4px 0  indigo,
-    6px 6px 0  blue,
-    8px 8px 0  green,
-    10px 10px 0  yellow,
-    12px 12px 0  orange,
-    14px 14px 0  red;
 }
 
 .card h1{
@@ -79,9 +66,9 @@
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
     .card{
-        margin-left: -20%;
-        width: 140%;
-        height: 100%;
+       width: 40vw;
+       height: 50%;
+       margin: 2vw 3vw;
     }
     .card svg{
         width: 50%;

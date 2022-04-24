@@ -5,15 +5,16 @@
     align-items: center;
     align-content: center;
     align-self: center;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 54px;
 }
 
 #services>.Typewriter  {
-    margin-top: -1vh;
-    margin-left: -1vw;
-    font-size: 3vw;
-    line-height: 3vw;
+    position: relative;
+    font-size: 2vw;
+    line-height: 0vw;
+    color: white;
 }
 
 .services-row{
@@ -29,16 +30,19 @@ section>.Typewriter{
 
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
-    section>.Typewriter{
-        display: flex;
-        align-items: start;
-        font-size: 5vw;
-        line-height: 5vh;
-        margin-top: -60vh;
+    #services>.Typewriter  {
+        position: relative;
+        font-size: 10vw;
+        line-height: 0vw;
+        color: white;
     }
 
     #services>.Typewriter{
         display: hidden;
+    }
+    
+    .section-services{
+        flex-direction: row;
     }
     
 }

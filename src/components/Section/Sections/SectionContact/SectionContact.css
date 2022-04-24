@@ -15,11 +15,11 @@
     flex-direction: column;
     border: 2px solid white;
     border-radius: 2px;
-    box-shadow: 20px 20px 0 #161339;
+    box-shadow: 15px 15px 0 white;
     color: white;
 }
 
-.contact-box.Typewriter {
+.contact-box> .Typewriter {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 2vw;
@@ -50,7 +50,7 @@
 }
 
 .identifiers:focus, .button-contact:focus{
-    box-shadow: 8px 8px 0 #161339;
+    box-shadow: 8px 8px 0 white;
 }
 
 .identifiers.email {

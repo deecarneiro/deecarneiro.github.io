@@ -10,7 +10,7 @@ function Mobile() {
       viewBox="0 0 500 500"
     >
       <g
-        stroke="#000"
+        stroke="#fff"
         strokeDasharray="none"
         strokeMiterlimit="4"
         strokeOpacity="1"
@@ -27,7 +27,7 @@ function Mobile() {
           height="137.706"
           x="92.462"
           y="183.281"
-          fill="#fff"
+          fill="none"
           fillOpacity="1"
           strokeLinecap="round"
           strokeLinejoin="round"
