@@ -66,12 +66,22 @@
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
     .card{
-       width: 40vw;
-       height: 50%;
-       margin: 2vw 3vw;
+        width: 80%;
+        height: 80%;            
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
     }
     .card svg{
         width: 50%;
         height: 50%;
+    }
+
+    .card h1{
+        font-size: 6vh;
+    }
+    p{
+        margin-top: 0vh;
+        font-size: 4vh;
     }
 }

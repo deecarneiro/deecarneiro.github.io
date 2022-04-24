@@ -1,4 +1,4 @@
-.section-services{
+.section-services {
     display: flex;
     height: 100%;
     width: 100%;
@@ -10,39 +10,52 @@
     margin-top: 54px;
 }
 
-#services>.Typewriter  {
+#services>.Typewriter {
     position: relative;
     font-size: 2vw;
     line-height: 0vw;
     color: white;
 }
 
-.services-row{
+.services-row {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
 }
-section>.Typewriter{
+
+section>.Typewriter {
     display: none;
+}
+
+a {
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    z-index: 99;
+    margin-top: 85vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    transform:rotate(45deg);
 }
 
 
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
-    #services>.Typewriter  {
+    #services>.Typewriter {
         position: relative;
         font-size: 10vw;
         line-height: 0vw;
         color: white;
     }
 
-    #services>.Typewriter{
+    #services>.Typewriter {
         display: hidden;
     }
-    
-    .section-services{
+
+    .section-services {
         flex-direction: row;
     }
-    
+
 }
