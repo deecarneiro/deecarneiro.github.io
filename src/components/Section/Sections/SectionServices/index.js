@@ -4,13 +4,11 @@ import Typewriter from 'typewriter-effect';
 import Card from '../../../Card';
 import Mobile from '../../../../assets/images/Mobile.jsx';
 import Web from '../../../../assets/images/Web.jsx';
-import REST from '../../../../assets/images/REST.jsx';
-import ReactCardCarousel from "react-card-carousel";
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import Games from '../../../../assets/images/Games';
-
+import { useSwipeable } from 'react-swipeable';
 function SectionServices() {
 
   const [visible, setVisible] = useState(false);
@@ -21,7 +19,9 @@ function SectionServices() {
     return document.location = '#contact'
   }
 
-
+  const handlers = useSwipeable({
+    onSwiped: (eventData) => console.log("User Swiped!", eventData) 
+   });
 
   const cards = [
     {
@@ -75,6 +75,7 @@ function SectionServices() {
               <div className="section-services">
                 {cards.map((card, key) => {
                   return <Card
+                  {...handlers}
                     title={card.title}
                     description={card.description}
                     buttonValue="See more"
@@ -85,10 +86,10 @@ function SectionServices() {
                     {card.icon}
                   </Card>
                 })}
-                {isMobile && 
-                 cards.map((card, key) => {
-                  return <a onClick={() => {setCurrentCard(key)}}></a>
-                })}
+                {isMobile &&
+                  cards.map((card, key) => {
+                    return <a onClick={() => { setCurrentCard(key) }}></a>
+                  })}
               </div>
             }
           </div> : ''}

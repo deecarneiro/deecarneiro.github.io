@@ -20,6 +20,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
+    "react-swipeable": "^6.2.1",
     "react-transition-group": "^4.4.2",
     "react-visibility-sensor": "^5.1.1",
     "typewriter-effect": "^2.18.2",
