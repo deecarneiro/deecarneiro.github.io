@@ -26,7 +26,7 @@ function SectionHome() {
             <h1 title="DEVELOPER" className="_404">DEVELOPER</h1>
           </div>
           <div className="box right">
-            Hi, I'm Dee Carneiro, a software developer
+            Hi I am Dee! A fullstack developer passionate with coding and make weird things come true...
           </div>
         </div>
       </div>
