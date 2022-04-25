@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import Games from '../../../../assets/images/Games';
 import { useSwipeable } from 'react-swipeable';
+
 function SectionServices() {
 
   const [visible, setVisible] = useState(false);
@@ -18,11 +19,7 @@ function SectionServices() {
   const goTo = () => {
     return document.location = '#contact'
   }
-
-  const handlers = useSwipeable({
-    onSwiped: (eventData) => console.log("User Swiped!", eventData) 
-   });
-
+  
   const cards = [
     {
       title: "Mobile",
@@ -42,12 +39,29 @@ function SectionServices() {
     }
   ]
 
+  const slideTo = (direction) => {
+    if(direction === 'right' && currentCard >= 1){
+      console.log(currentCard, 'right')
+      setCurrentCard(currentCard-1)
+    }else if(direction === 'left' && currentCard <= cards.length-2){
+      console.log(currentCard, 'left')
+      setCurrentCard(currentCard+1)
+    }
+  }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => slideTo('left'),
+    onSwipedRight: () => slideTo('right'),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
     <VisibilitySensor onChange={(isVisible) => { setVisible(isVisible) }}>
       <Section>
         {visible ?
 
-          <div id="services">
+          <div id="services" {...handlers}>
             {isTyping ?
               <Typewriter
                 onInit={(typewriter) => {
