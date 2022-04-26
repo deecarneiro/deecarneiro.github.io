@@ -60,7 +60,10 @@
 
 .card p{
     text-align: center;
-     margin: 20px;
+    margin: 20px;
+    font-size: 2.5vh;
+    font-family: 'Fira Mono', monospace;
+
 }
 
 @media (min-device-width: 350px) and (max-device-width: 850px) {
