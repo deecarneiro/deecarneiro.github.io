@@ -6,7 +6,7 @@
     align-content: center;
     align-self: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row !important;
     margin-top: 54px;
 }
 
@@ -33,7 +33,7 @@ a {
     width: 2em;
     height: 2em;
     position: relative;
-    z-index: 99;
+    /* z-index: 99; */
     margin-top: 85vh;
     margin-right: 4vw;
     margin-left: 4vw;

@@ -3,19 +3,14 @@ import './Card.css';
 
 function Card(props) {
 
-    const { title, imgSrc, description, buttonValue, onclick, visibility } = props;
+    const {title, imgSrc, description, buttonValue, onclick} = props;
     return (
-        <>
-            {
-                visibility &&
-                    <span className="card">
-                        < h1 > {title}</h1 >
-                        {props.children}
-                        < p > {description}</p >
-                        <button onClick={onclick}>{buttonValue}</button>
-                    </span >
-            }
-        </>
+        <span className="card">
+            <h1>{title}</h1>
+            {props.children}
+            <p>{description}</p>
+            <button onClick={onclick}>{buttonValue}</button>
+        </span>
     );
 }
 

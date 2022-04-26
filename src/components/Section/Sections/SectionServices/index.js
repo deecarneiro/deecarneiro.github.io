@@ -2,6 +2,7 @@ import Section from '../..';
 import './SectionServices.css';
 import Typewriter from 'typewriter-effect';
 import Card from '../../../Card';
+import MobileCard from '../../../MobileCard';
 import Mobile from '../../../../assets/images/Mobile.jsx';
 import Web from '../../../../assets/images/Web.jsx';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -19,7 +20,7 @@ function SectionServices() {
   const goTo = () => {
     return document.location = '#contact'
   }
-  
+
   const cards = [
     {
       title: "Mobile",
@@ -40,12 +41,12 @@ function SectionServices() {
   ]
 
   const slideTo = (direction) => {
-    if(direction === 'right' && currentCard >= 1){
+    if (direction === 'right' && currentCard >= 1) {
       console.log(currentCard, 'right')
-      setCurrentCard(currentCard-1)
-    }else if(direction === 'left' && currentCard <= cards.length-2){
+      setCurrentCard(currentCard - 1)
+    } else if (direction === 'left' && currentCard <= cards.length - 2) {
       console.log(currentCard, 'left')
-      setCurrentCard(currentCard+1)
+      setCurrentCard(currentCard + 1)
     }
   }
 
@@ -56,12 +57,25 @@ function SectionServices() {
     trackMouse: true
   });
 
+  const browser = cards.map((card, key) => {
+    return <Card
+      title={card.title}
+      description={card.description}
+      buttonValue="See more"
+      onclick={() => goTo()}
+      key={key}
+      visibility={key === currentCard}
+    >
+      {card.icon}
+    </Card>
+  })
+
   return (
     <VisibilitySensor onChange={(isVisible) => { setVisible(isVisible) }}>
       <Section>
         {visible ?
 
-          <div id="services" {...handlers}>
+          <div id="services">
             {isTyping ?
               <Typewriter
                 onInit={(typewriter) => {
@@ -85,11 +99,11 @@ function SectionServices() {
                     .start()
                 }}
               /> : ''}
-            {isTyping == false &&
-              <div className="section-services">
+            {isTyping === false ?
+              isMobile ?
+              <div className="section-services"   {...handlers}>
                 {cards.map((card, key) => {
-                  return <Card
-                  {...handlers}
+                  return <MobileCard
                     title={card.title}
                     description={card.description}
                     buttonValue="See more"
@@ -98,14 +112,18 @@ function SectionServices() {
                     visibility={key === currentCard}
                   >
                     {card.icon}
-                  </Card>
+                  </MobileCard>
                 })}
-                {isMobile &&
-                  cards.map((card, key) => {
-                    return <a onClick={() => { setCurrentCard(key) }}></a>
-                  })}
+                {cards.map((card, key) => {
+                  return <a onClick={() => { setCurrentCard(key) }}></a>
+                })}
               </div>
-            }
+              :
+              <div className="section-services" >
+               {browser}
+              </div>
+              : ''
+             }
           </div> : ''}
       </Section>
     </VisibilitySensor >
