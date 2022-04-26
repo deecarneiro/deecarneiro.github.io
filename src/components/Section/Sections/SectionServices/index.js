@@ -122,7 +122,7 @@ function SectionServices() {
               <div className="section-services" >
                {browser}
               </div>
-              : isTyping !== true && isTyping !== false &&
+              : isMobile &&
               <div className="section-services"   {...handlers}>
                 {cards.map((card, key) => {
                   return <MobileCard
