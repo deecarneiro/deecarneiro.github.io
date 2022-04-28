@@ -68,7 +68,7 @@
 @media (min-device-width: 350px) and (max-device-width: 850px) {
 
     .card{
-        width: 100%;
+        width: 80%;
         height: 80%;            
         position: absolute;
         top: 10vh;
