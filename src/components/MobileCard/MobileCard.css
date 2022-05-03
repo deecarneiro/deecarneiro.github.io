@@ -1,4 +1,4 @@
-.card {
+.mobile-card {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -15,7 +15,7 @@
     left: 10vw;
 }
 
-.card button {
+.mobile-card button {
     align-self: center;
     padding: 1vw 3vw;
     font-size: 3vh;
@@ -26,7 +26,7 @@
     color: white;
 }
 
-.card button:hover {
+.mobile-card button:hover {
     box-shadow:
         2px 2px 0 violet,
         4px 4px 0 indigo,
@@ -37,21 +37,21 @@
         14px 14px 0 red;
 }
 
-.card svg {
+.mobile-card svg {
     width: 90%;
     height: 90%;
     object-fit: cover;
     object-position: 0% 0%;
 }
 
-.card h1 {
+.mobile-card h1 {
     font-family: 'Fira Mono', monospace;
     font-weight: lighter;
     font-size: 4vh;
 
 }
 
-.card:hover {
+.mobile-card:hover {
     box-shadow:
         2px 2px 0 violet,
         4px 4px 0 indigo,
@@ -62,7 +62,7 @@
         14px 14px 0 red;
 }
 
-.card p {
+.mobile-card p {
     text-align: center;
     margin: 20px;
     font-size: 4vh;

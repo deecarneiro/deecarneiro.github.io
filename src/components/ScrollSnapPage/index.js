@@ -12,6 +12,7 @@ import {
 import './ScrollSnapPage.css';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';
+
 function ScrollSnapPage() {
 
     const [isHome, setIsHome] = useState(false);

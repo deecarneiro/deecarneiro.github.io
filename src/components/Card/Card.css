@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column !important;
     height: 60vh;
-    width: 26vw;
+    width: 24vw;
     background-color: black;
     border: 2px solid white;
     box-shadow: 8px 8px 0  white;
@@ -64,34 +64,4 @@
     font-size: 2.5vh;
     font-family: 'Fira Mono', monospace;
 
-}
-
-@media (min-device-width: 350px) and (max-device-width: 850px) {
-
-    .card{
-        width: 80%;
-        height: 80%;            
-        position: absolute;
-        top: 10vh;
-        left: 10vw;
-    }
-    .card svg{
-        width: 90%;
-        height: 90%;
-        object-fit:cover;
-        object-position:0% 0%; 
-        }
-
-    .card h1{
-        font-size: 4vh;
-    }
-    p{
-        font-size: 3vh;
-    }
-
-    .card button{
-
-        font-size: 3vh;
-
-    }
 }

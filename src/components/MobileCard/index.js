@@ -8,7 +8,7 @@ function MobileCard(props) {
         <>
             {
                 visibility &&
-                    <span className="card">
+                    <span className="mobile-card">
                         < h1 > {title}</h1 >
                         {props.children}
                         < p > {description}</p >

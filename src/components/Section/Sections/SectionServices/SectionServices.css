@@ -40,22 +40,3 @@ a {
     transform:rotate(45deg);
 }
 
-
-@media (min-device-width: 350px) and (max-device-width: 850px) {
-
-    #services>.Typewriter {
-        position: relative;
-        font-size: 10vw;
-        line-height: 0vw;
-        color: white;
-    }
-
-    #services>.Typewriter {
-        display: hidden;
-    }
-
-    .section-services {
-        flex-direction: row;
-    }
-
-}
