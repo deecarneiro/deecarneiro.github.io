@@ -44,8 +44,8 @@ a {
 }
 
 .selected{
-    width: 0.8em;
-    height: 0.8em;
+    width: 0.9em;
+    height: 0.9em;
     outline: 1px solid white;
     outline-offset: 5px;
 }
