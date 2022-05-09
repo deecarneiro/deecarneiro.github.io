@@ -119,7 +119,7 @@ function SectionServices() {
               </MobileCard>
             })}
             {cards.map((card, key) => {
-              return <a onClick={() => { setCurrentCard(key) }}></a>
+              return <a className={key === currentCard ? "selected": ''} onClick={() => { setCurrentCard(key) }}></a>
             })}
           </div> : "No content"
         }

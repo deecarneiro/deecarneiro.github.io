@@ -43,3 +43,8 @@ a {
     transform:rotate(45deg);
 }
 
+a.selected{
+    width: 0.5em;
+    height: 0.5em;
+    outline-offset: 2px solid white;
+}
