@@ -48,4 +48,6 @@ a {
     height: 0.9em;
     outline: 2px solid white;
     outline-offset: 5px;
+    transform:rotate(0deg);
+
 }
