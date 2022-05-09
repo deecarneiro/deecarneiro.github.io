@@ -13,7 +13,7 @@ import { useSwipeable } from 'react-swipeable';
 
 function SectionServices() {
 
-  const [visible, setVisible] = useState(false);
+  const [visibility, setVisibility] = useState(false);
   const [isTyping, setIsTyping] = useState(true);
   const [currentCard, setCurrentCard] = useState(0);
   const [isMobileDetected, setIsMobileDetected] = useState(false)
@@ -76,9 +76,9 @@ function SectionServices() {
   }, []);
 
   return (
-    <VisibilitySensor onChange={(isVisible) => { setVisible(isVisible) }}>
+    <VisibilitySensor onChange={(isVisible) => { setVisibility(isVisible) }}>
       <Section>
-        {visible ?
+        {visibility ?
           <div id="services">
             {
               isMobileDetected ?
