@@ -46,6 +46,6 @@ a {
 .selected{
     width: 0.9em;
     height: 0.9em;
-    outline: 1px solid white;
+    outline: 2px solid white;
     outline-offset: 5px;
 }
