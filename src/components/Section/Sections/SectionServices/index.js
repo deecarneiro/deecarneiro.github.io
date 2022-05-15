@@ -24,19 +24,20 @@ function SectionServices() {
 
   const cards = [
     {
+     // Desenvolvimento de aplicativos nativos para IOS, WATCH IOS ou Apple TV programados em Swift //
       title: "Mobile",
-      description: "Frontend and Backend for mobile development",
+      description: "Hybrid App Development with React Native, Flutter, Ionic. And Native App Development Swift and Android",
       icon: <Mobile />
 
     },
     {
       title: "Web",
-      description: "Frontend and Backend for web development",
+      description: "Frontend and Backend for web development with Reactjs, Angular, Nodejs and Spring Boot",
       icon: <Web />
     },
     {
       title: "Games",
-      description: "Frontend for web games",
+      description: "Frontend and Backend for web games",
       icon: <Games />
     }
   ]
