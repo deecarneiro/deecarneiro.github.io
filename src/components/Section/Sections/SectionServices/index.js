@@ -17,7 +17,7 @@ function SectionServices() {
   const [isTyping, setIsTyping] = useState(true);
   const [currentCard, setCurrentCard] = useState(0);
   const [isMobileDetected, setIsMobileDetected] = useState(false)
-
+    
   const goTo = () => {
     return document.location = '#contact'
   }
@@ -25,18 +25,18 @@ function SectionServices() {
   const cards = [
     {
       title: "Mobile",
-      description: "Frontend mobile with React Native, Flutter, Ionic Framework...",
+      description: "Frontend and Backend for mobile development",
       icon: <Mobile />
 
     },
     {
       title: "Web",
-      description: "Frontend and Backend development",
+      description: "Frontend and Backend for web development",
       icon: <Web />
     },
     {
       title: "Games",
-      description: "Frontend and Backend development",
+      description: "Frontend for web games",
       icon: <Games />
     }
   ]
